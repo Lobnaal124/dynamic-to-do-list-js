@@ -1,7 +1,7 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Select the DOM elements
-    const addButton = document.getElementById('add-task');
+    const addButton = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 document.addEventListener('DOMContentLoaded', () => {
     loadTasks();
-    document.getElementById('add-task').addEventListener('click', () => {
+    document.getElementById('add-task-btn').addEventListener('click', () => {
         const taskInput = document.getElementById('task-input');
         if (taskInput.value.trim()) {
             addTask(taskInput.value);
